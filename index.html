@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex 网页</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #eee;
+        height: 100vh;
+        height: 100%;
+      }
+      * {
+        /* border: 1px solid black; */
+      }
+      .flex {
+        display: flex;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .daohang {
+        padding: 10px 20px;
+        font-size: 14px;
+        color: #666;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .mgr {
+        margin-right: 8px;
+      }
+      .mgl {
+        margin-left: 8px;
+      }
+      .flex2 {
+        flex: 2;
+      }
+      .yinying {
+        box-shadow: 6px 5px 2px #888;
+      }
+      .hongse {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body class="flex column">
+    <!-- 头部栏 -->
+    <div class="baiSe yinying flex" style="height: 300px"></div>
+    <!-- 中心栏 -->
+    <div class="flex1 flex">
+      <!-- 左栏 -->
+      <div style="flex: 1"></div>
+      <!-- 中栏 -->
+      <div style="flex: 6" class="flex1">
+        <!-- 导航栏 -->
+        <div
+          style="
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+          "
+          class="flex baiSe mgl mgr mgt8 yinying"
+        >
+          <div class="daohang">导航</div>
+          <div class="daohang">导航</div>
+          <div class="daohang">导航</div>
+          <div class="daohang">导航</div>
+          <div class="daohang">导航</div>
+          <div class="daohang">导航</div>
+          <div class="daohang">导航</div>
+          <div style="padding: 7px; border: 1px solid rgb(190, 190, 190)">
+            <div class="daohang">个性化</div>
+          </div>
+        </div>
+        <!-- 主内容 -->
+        <div class="flex mgt8 mgl mgr">
+          <div style="height: 300px" class="flex2 mgr baiSe yinying"></div>
+          <div style="height: 300px" class="flex1 mgr baiSe yinying"></div>
+          <div style="height: 300px" class="flex1 mgr baiSe yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe yinying"></div>
+        </div>
+        <div class="flex mgl mgt8 mgr">
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe yinying"></div>
+        </div>
+        <div class="flex mgt8 mgl mgr">
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe yinying"></div>
+        </div>
+        <div class="flex mgt8 mgr mgl">
+          <div style="height: 300px" class="flex2 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe yinying"></div>
+        </div>
+        <div class="flex mgt8 mgr mgl">
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe yinying"></div>
+        </div>
+        <div class="flex mgt8 mgr mgl">
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe yinying"></div>
+        </div>
+        <div class="flex mgt8 mgr mgl">
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe mgr yinying"></div>
+          <div style="height: 300px" class="flex1 baiSe yinying"></div>
+        </div>
+      </div>
+      <!-- 右栏 -->
+      <div style="flex: 1"></div>
+    </div>
+  </body>
+</html>
